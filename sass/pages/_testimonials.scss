@@ -1,0 +1,122 @@
+.testimonials {
+  background-color: var(--color-bg-2);
+}
+.testimonials-inner {
+  @include padding-big;
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    h2 {
+      font-size: 5rem;
+
+      @media (max-width: 992px) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      padding-left: 3rem;
+      align-self: flex-end;
+    }
+  }
+
+  &__box {
+    margin: 3rem 0;
+    background-color: var(--color-bg-1);
+    @include padding-medium;
+    border-radius: 0.5rem;
+
+    &--review {
+      display: flex;
+      justify-content: space-between;
+
+      .rating {
+        display: flex;
+        flex-direction: column;
+
+        .stars {
+          display: flex;
+
+          &-icon {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+          }
+
+          p {
+            padding-left: 2rem;
+          }
+        }
+
+        .review-text {
+          padding: 1rem 3rem 1rem 0;
+          color: var(--color-text-1);
+          font-size: 1.6rem;
+        }
+      }
+
+      .quote {
+        font-size: 7rem;
+        color: var(--color-text-2);
+
+        @media (max-width: 992px) {
+          font-size: 4rem;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  &__review-man {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--box {
+      width: 33%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-bottom: 2rem;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 2rem 0;
+        justify-content: space-between;
+      }
+
+      &:first-child {
+        border-bottom: 2px solid var(--color-primary);
+      }
+
+      &__img {
+        img {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+        }
+      }
+
+      &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4 {
+          color: var(--color-text-1);
+          font-family: var(--font-sub-heading);
+        }
+        p {
+          color: var(--color-text-2);
+          font-size: 1.6rem;
+
+          a {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

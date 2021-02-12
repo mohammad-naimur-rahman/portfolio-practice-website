@@ -1,0 +1,22 @@
+.brands {
+  background-color: var(--color-bg-1);
+}
+.brands-inner {
+  @include padding-big;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 25rem;
+
+    @media (max-width: 992px) {
+      width: 22rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 15rem;
+    }
+  }
+}

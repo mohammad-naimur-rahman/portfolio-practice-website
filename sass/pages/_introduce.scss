@@ -1,0 +1,67 @@
+.introduce-outer {
+  background-color: var(--color-bg-1);
+}
+.introduce-inner {
+  @include padding-big;
+}
+.introduce-inner-1 {
+  @include padding-medium;
+
+  &__card {
+    background-color: var(--color-bg-2);
+    @include padding-small;
+    margin: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    &--left {
+      h3 {
+        color: var(--color-primary);
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+        color: var(--color-text-2);
+        font-family: var(--font-default);
+        padding-bottom: 1.5rem;
+      }
+      a {
+        font-size: 1.5rem;
+        color: var(--color-text-1);
+      }
+    }
+    &--right {
+      color: var(--color-primary);
+      font-size: 3rem;
+    }
+  }
+}
+.introduce-inner-2 {
+  @include padding-big;
+
+  h2 {
+    font-size: 3rem;
+
+    @media (max-width: 992px) {
+      font-size: 2rem;
+    }
+  }
+  .italic-heading {
+    font-family: var(--font-italic);
+    font-size: 2rem;
+    color: var(--color-text-1);
+    padding: 3rem 0;
+  }
+
+  &__text {
+    color: var(--color-text-2);
+    font-size: 1.6rem;
+    font-family: var(--font-sub-heading);
+  }
+}

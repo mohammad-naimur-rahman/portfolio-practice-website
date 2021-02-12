@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto:wght@300;400&family=Titillium+Web:wght@700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header id="header" class="container-fluid header">
+        <section class="header-content container-sm container-fluid">
+            <nav class="header-nav">
+                <div class="toggle" onclick="showNav()"><i class="fas fa-bars"></i></div>
+                <h3 class="header-nav__logo">Naimur <span>Rahman</span></h3>
+                <ul id="nav" class="header-nav__ul go-down">
+                    <span id="cross" onclick="goDown()"><i class="fas fa-times"></i></span>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#works">My Works</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <ul class="header-nav__social">
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-github"></i> Github</a></li>
+                    <li><a href="#" class="mail-me"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="showup">
+                        <div class="header-btn">
+                            <a href="#" class="btn-1 header-btn">Front end developer</a>
+                        </div>
+                        <h1>Talk is cheap
+                            <br>Show me the code
+                        </h1>
+                        <p>I design beutifully and simple things,
+                            <br>and I love what I do
+                        </p>
+                        <div class="header-btn">
+                            <a href="#" class="btn-2">Let's chat</a>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div class="experience-box">
+                            <div class="experience-box-left">
+                                <h2>12</h2>
+                            </div>
+                            <div class="experience-box-right">
+                                <p>Years</p>
+                                <p>Experience</p>
+                            </div>
+                        </div>
+                        <div class="experience-box">
+                            <div class="experience-box-left">
+                                <h2>23</h2>
+                            </div>
+                            <div class="experience-box-right">
+                                <p>Projects</p>
+                                <p>done</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 hero">
+                    <img src="image/hero.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <section id="service" class="container-fluid introduce-outer">
+        <div class="container-fluid container-sm introduce-inner">
+            <div class="row">
+                <div class="col-md-6 introduce-inner-1 order-md">
+                    <div class="introduce-inner-1__card">
+                        <div class="introduce-inner-1__card--left">
+                            <h3>Design</h3>
+                            <p>Create digital products with unique ideas</p>
+                            <a href="#">20 projects</a>
+                        </div>
+                        <div class="introduce-inner-1__card--right">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                    </div>
+                    <div class="introduce-inner-1__card">
+                        <div class="introduce-inner-1__card--left">
+                            <h3>Front end</h3>
+                            <p>I develop front end with coding super smooth</p>
+                            <a href="#">15 projects</a>
+                        </div>
+                        <div class="introduce-inner-1__card--right">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="introduce-inner-1__card">
+                        <div class="introduce-inner-1__card--left">
+                            <h3>SEO</h3>
+                            <p>Boost your business witho SEO optimize</p>
+                            <a href="#">3 projects</a>
+                        </div>
+                        <div class="introduce-inner-1__card--right">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 introduce-inner-2">
+                    <div class="sub-heading">
+                        <p>Introduce</p>
+                    </div>
+                    <h2>
+                        Hello! I am Naimur
+                        <br>Rahman
+                    </h2>
+                    <p class="italic-heading">
+                        Every great design begin with an even better story
+                    </p>
+                    <p class="introduce-inner-2__text">
+                        Since beginning my journey as a freelancer designer nearly 3 years ago, I've done remote work
+                        for agencies, consulted for start ups and colaborated with talented people to create digital
+                        products for both business and consumer use. I'm quietly confident naturally curious and
+                        perpetually working on improving my chopsone design problem at a time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid brands">
+        <div class="container-fluid container-sm brands-inner">
+            <img src="image/brand1.png" alt="">
+            <img src="image/brand2.png" alt="">
+            <img src="image/brand3.png" alt="">
+            <img src="image/brand4.png" alt="">
+            <img src="image/brand5.png" alt="">
+            <img src="image/brand6.png" alt="">
+        </div>
+    </section>
+
+    <section id="works" class="container-fluid works">
+        <div class="conainer-sm container-fluid works-inner">
+            <div class="row">
+                <div class="col-md-6 works-inner__left">
+                    <div class="works-inner__left--heading">
+                        <h2>Latest Works</h2>
+                        <p class="sub-heading">Perfect solution for digital experience</p>
+                    </div>
+                    <div class="works-card">
+                        <div class="works-card__header">
+                            <h3 class="works-card__header--left">
+                                Natour
+                            </h3>
+                            <div class="works-card__header--right">
+                                <p class="btn-1">HTML</p>
+                                <p class="btn-1">CSS</p>
+                            </div>
+                        </div>
+                        <a href="https://mohammad-naimur-rahman.github.io/natour-website/" class="works-card__img">
+                            <img src="image/works1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="works-inner__left--more">
+                        <a href="#" class="btn2">
+                            <h2>ALL PROJECTS</h2>
+                        </a>
+
+                        <p>* some projects publication are not allowed by NDA, for more, <a href="#"
+                                class="btn2">contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 works-inner__right">
+                    <div class="works-card">
+                        <div class="works-card__header">
+                            <h3 class="works-card__header--left">
+                                Lyrics Book
+                            </h3>
+                            <div class="works-card__header--right">
+                                <p class="btn-1">HTML</p>
+                                <p class="btn-1">CSS</p>
+                                <p class="btn-1">JS API</p>
+                            </div>
+                        </div>
+                        <a href="https://mohammad-naimur-rahman.github.io/natour-website/" class="works-card__img">
+                            <img src="image/works2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="works-card">
+                        <div class="works-card__header">
+                            <h3 class="works-card__header--left">
+                                Natour
+                            </h3>
+                            <div class="works-card__header--right">
+                                <p class="btn-1">HTML</p>
+                                <p class="btn-1">CSS</p>
+                            </div>
+                        </div>
+                        <a href="https://mohammad-naimur-rahman.github.io/natour-website/" class="works-card__img">
+                            <img src="image/works3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container-fluid testimonials">
+        <div class="container-fluid container-sm testimonials-inner">
+            <div class="testimonials-inner__heading">
+                <h2>Testimonials</h2>
+                <p class="sub-heading">What clients say about me</p>
+            </div>
+            <div class="testimonials-inner__box">
+                <div class="testimonials-inner__box--review">
+                    <div class="rating">
+                        <div class="stars">
+                            <div class="stars-icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="sub-heading">5.0 stars rating</p>
+                        </div>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe veniam porro facere
+                            quia expedita cumque, dignissimos eaque mollitia fugit? Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Repellat delectus recusandae voluptates numquam fugiat
+                            voluptatibus molestiae harum quibusdam veniam asperiores!
+                        </p>
+                    </div>
+                    <div class="quote">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-inner__review-man">
+                <div class="testimonials-inner__review-man--box">
+                    <div class="testimonials-inner__review-man--box__img">
+                        <img src="image/review1.jpg" alt="">
+                    </div>
+                    <div class="testimonials-inner__review-man--box__details">
+                        <h4>Benjamin Brayat</h4>
+                        <p>VP and Co-founder, <a href="#">Wiser</a></p>
+                    </div>
+                </div>
+                <div class="testimonials-inner__review-man--box">
+                    <div class="testimonials-inner__review-man--box__img">
+                        <img src="image/review2.jpg" alt="">
+                    </div>
+                    <div class="testimonials-inner__review-man--box__details">
+                        <h4>Raaid Hoassin</h4>
+                        <p>Founder and CEO, <a href="#">Technik corp.</a></p>
+                    </div>
+                </div>
+                <div class="testimonials-inner__review-man--box">
+                    <div class="testimonials-inner__review-man--box__img">
+                        <img src="image/review3.jpg" alt="">
+                    </div>
+                    <div class="testimonials-inner__review-man--box__details">
+                        <h4>Horried Henry</h4>
+                        <p>Manager <a href="#">Misery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards container-fluid">
+        <div class="container-fluid container-sm awards-inner">
+            <div class="awards-inner__heading">
+                <h2>Awards</h2>
+                <p class="sub-heading">Awards makes my works more valuable</p>
+            </div>
+            <div class="awards-inner__box">
+                <div class="awards-inner__box--left">
+                    <p>2019</p>
+                </div>
+                <div class="awards-inner__box--right">
+                    <div class="awards-inner__box--right__count">
+                        <p>Awwwards</p>
+                        <h4>Site for the years for <a href="#" class="btn-2">Lewis</a></h4>
+                    </div>
+                    <div class="awards-inner__box--right__count">
+                        <p>CSS Design Award</p>
+                        <h4>Honorable mention for<a href="#" class="btn-2">Tricks</a></h4>
+                    </div>
+                    <div class="awards-inner__box--right__count">
+                        <p>Product Hund Maker</p>
+                        <h4>Gold in digital crafts for <a href="#" class="btn-2">Biforde</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="awards-inner__box">
+                <div class="awards-inner__box--left">
+                    <p>2020</p>
+                </div>
+                <div class="awards-inner__box--right">
+                    <div class="awards-inner__box--right__count">
+                        <p>Fwa</p>
+                        <h4>Corporate social responsibility for <a href="#" class="btn-2">Arquito</a></h4>
+                    </div>
+                    <div class="awards-inner__box--right__count">
+                        <p>Semplice</p>
+                        <h4>Best showcase for <a href="#" class="btn-2">Focus</a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer">
+        <div class="container-fluid container-sm footer-inner">
+            <div class="footer-inner-section row">
+                <div class="col-md-8">
+                    <h2>Let's make something amazing togather</h2>
+                    <h2>Start by <a href="#" class="btn-2">Saying Hi</a></h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-inner-section__address">
+                        <p class="sub-heading">Information</p>
+                        <p class="address">116 Fairground Rd, FL 3290, USA</p>
+                        <p class="email">daniel@hello.com</p>
+                    </div>
+                    <ul class="footer-inner-section__ul">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-inner-section row">
+                <div class="col-md-8">
+                    <h3 class="footer-owner">Naimur <span>Rahman</span></h3>
+                    <p class="sub-heading">&copy; Naimur Rahman - 2021</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-github-square"></i></a>
+                        <a href="#"><i class="fab fa-dribbble-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function goDown() {
+            document.getElementById('nav').classList.add('go-down');
+            document.getElementById('nav').classList.remove('go-up');
+        }
+
+        function showNav() {
+            document.getElementById('nav').classList.add('go-up');
+            document.getElementById('nav').classList.remove('go-down');
+        }
+    </script>
+</body>
+
+</html>

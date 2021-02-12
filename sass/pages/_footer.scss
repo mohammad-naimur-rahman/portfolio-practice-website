@@ -1,0 +1,97 @@
+.footer {
+  background-color: var(--color-bg-1);
+
+  &-inner {
+    @include padding-big;
+
+    h2 {
+      font-size: 4rem;
+
+      @media (max-width: 992px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    .btn-2 {
+      font-size: 3.8rem;
+
+      @media (max-width: 992px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    &-section__address {
+      .sub-heading {
+        font-size: 1.6rem;
+      }
+      .address {
+        font-family: var(--font-italic);
+        font-size: 2rem;
+        color: var(--color-text-2);
+      }
+      .email {
+        color: var(--color-text-1);
+        font-size: 2.2rem;
+        padding-bottom: 3rem;
+      }
+    }
+
+    &-section {
+      .footer-owner {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+
+        @media (max-width: 768px) {
+          font-size: 2rem;
+          padding: 2rem 0;
+        }
+
+        span {
+          color: var(--color-text-2);
+        }
+      }
+      &__ul {
+        li {
+          a {
+            color: var(--color-text-2);
+            font-size: 1.6rem;
+            transition: 0.5s;
+
+            &:hover {
+              color: var(--color-primary);
+            }
+
+            &:hover::before {
+              content: "<";
+              transition: 0.5s;
+            }
+
+            &:hover::after {
+              content: ">";
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+      .footer-social {
+        padding: 2rem 0;
+        a {
+          color: var(--color-text-1);
+          font-size: 2rem;
+          padding: 0 2rem;
+          transition: 0.5s;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

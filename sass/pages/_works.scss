@@ -1,0 +1,80 @@
+.works {
+  background-color: var(--color-bg-1);
+
+  &-inner {
+    @include padding-big;
+
+    &__left {
+      @include padding-medium;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &--heading {
+        text-align: center;
+        h2 {
+          font-size: 5rem;
+
+          @media (max-width: 992px) {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      &--more {
+        text-align: center;
+        a {
+          color: var(--color-primary);
+
+          h2 {
+            font-size: 3rem;
+            color: currentColor;
+          }
+        }
+        p {
+          padding: 3rem 0;
+          font-size: 1.5rem;
+          color: var(--color-text-2);
+        }
+      }
+    }
+  }
+
+  &-card {
+    padding: 3rem 5rem;
+
+    &__header {
+      @include padding-small;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--color-text-1);
+
+      @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &--left {
+        font-size: 3rem;
+
+        @media (max-width: 992px) {
+          font-size: 2rem;
+          padding: 1rem 0;
+        }
+      }
+
+      &--right {
+        p {
+          display: inline;
+        }
+      }
+    }
+    &__img {
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
