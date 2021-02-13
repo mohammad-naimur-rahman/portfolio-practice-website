@@ -51,8 +51,10 @@ h6 {
 .btn-1 {
   color: var(--color-bg-2);
   font-weight: bold;
+  display: inline-block;
   font-family: var(--font-sub-heading);
   padding: 1rem 2rem;
+  margin: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
   border: 1px solid transparent;
@@ -69,6 +71,7 @@ h6 {
 }
 
 .btn-2 {
+  display: inline-block;
   color: var(--color-primary);
   font-weight: bold;
   font-family: var(--font-sub-heading);
@@ -398,6 +401,12 @@ h6 {
 
 .footer-inner-section .footer-social {
   padding: 2rem 0;
+}
+
+@media (max-width: 7680px) {
+  .footer-inner-section .footer-social {
+    text-align: center;
+  }
 }
 
 .footer-inner-section .footer-social a {
@@ -1220,7 +1229,7 @@ h6 {
 }
 
 .works-card__header--right p {
-  display: inline;
+  display: inline-block;
 }
 
 .works-card__img img {

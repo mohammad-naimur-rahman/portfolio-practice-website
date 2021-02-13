@@ -81,6 +81,10 @@
       }
       .footer-social {
         padding: 2rem 0;
+
+        @media (max-width: 7680px) {
+          text-align: center;
+        }
         a {
           color: var(--color-text-1);
           font-size: 2rem;

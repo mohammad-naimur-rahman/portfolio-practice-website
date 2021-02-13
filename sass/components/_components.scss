@@ -1,8 +1,10 @@
 .btn-1 {
   color: var(--color-bg-2);
   font-weight: bold;
+  display: inline-block;
   font-family: var(--font-sub-heading);
   padding: 1rem 2rem;
+  margin: 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
   border: 1px solid transparent;
@@ -18,6 +20,7 @@
 }
 
 .btn-2 {
+  display: inline-block;
   color: var(--color-primary);
   font-weight: bold;
   font-family: var(--font-sub-heading);
