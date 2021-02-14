@@ -78,3 +78,19 @@
     }
   }
 }
+
+.show-on-sm {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.hide-on-sm {
+  display: block;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--color-bg-2);
 
   .header-nav {
@@ -98,8 +98,16 @@
     }
   }
 
+  .header-left {
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 10rem);
+      justify-content: space-around;
+    }
+  }
   .showup {
-    padding: 8rem;
+    @include padding-medium;
 
     .header-btn {
       margin: 3rem 0;
@@ -183,7 +191,9 @@
     img {
       width: 70%;
       margin-top: auto;
-
+      @media (max-width: 1200px) {
+        margin-top: initial;
+      }
       @media (max-width: 992px) {
         width: 90%;
       }

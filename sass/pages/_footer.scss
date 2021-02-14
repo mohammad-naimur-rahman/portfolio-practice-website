@@ -43,6 +43,11 @@
     }
 
     &-section {
+      .copywrite {
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
       .footer-owner {
         font-size: 3rem;
         padding-bottom: 2rem;
@@ -51,7 +56,6 @@
           font-size: 2rem;
           padding: 2rem 0;
         }
-
         span {
           color: var(--color-text-2);
         }
@@ -82,7 +86,7 @@
       .footer-social {
         padding: 2rem 0;
 
-        @media (max-width: 7680px) {
+        @media (max-width: 768px) {
           text-align: center;
         }
         a {
