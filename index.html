@@ -19,6 +19,11 @@
 </head>
 
 <body>
+    <div id="loader">
+        <div class="codepad-logo">
+            <div class="logo"></div>
+        </div>
+    </div>
     <header id="header" class="container-fluid header">
         <section class="header-content container-sm container-fluid">
             <nav class="header-nav">
@@ -375,6 +380,10 @@
         function showNav() {
             document.getElementById('nav').classList.add('go-up');
             document.getElementById('nav').classList.remove('go-down');
+        }
+
+        window.onload = function () {
+            document.getElementById('loader').style.display = 'none';
         }
     </script>
 </body>
